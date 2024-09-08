@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.container{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.container div{
+    position: absolute;
+    border-radius: 50%;
+    animation: gradient 4s infinite;
+    z-index: -1;
+}
+@keyframes gradient{
+    70%{
+        transform: scale(1.2)translate(50px);
+    }
+}
+.container div:nth-child(1){
+    height: 75%;
+    width: 65%;
+    background-color: #F6F5F2;
+    left: -20%;
+}
+.container div:nth-child(2){
+    height: 75%;
+    width: 80%;
+    background-color: #CCCCFF;
+    top: -12%;
+    right: -12%;
+    animation-delay: 2s;
+}
+/* .container div:nth-child(3){
+    height: 50%;
+    width: 75%;
+    background-color: #E3E4FA;
+    bottom: -10%;
+    left: -18%;
+} */
+.container div:nth-child(3){
+    height: 65%;
+    width: 80%;
+    background-color: #d2b4de ;
+    bottom: -20%;
+    right: -15%;
+    animation-delay: 0.3s;
+}
+.container div:nth-child(4){
+    height: 50%;
+    width: 75%;
+    background-color: #E3E4FA;
+    bottom: -10%;
+    left: -18%;
+    animation-delay: 1.2s;
+}
+.container:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+    z-index: -1;
+
+}
+
+.main{
+    display: flex;
+    z-index: 1;
+}
+.box1{
+    width: 500px;
+    height: 600px;
+    background-color: wheat;
+    box-shadow: 3px 3px 10px rgb(0,0,0,0.2);
+    border-radius: 50px;
+    margin: 50px;
+    overflow: hidden;
+}
+.img{
+    height: 60%;
+    background-color: white;
+    display: flex;
+    align-items: 50%;
+    justify-content: center;
+
+}
+.quote{
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.box2{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(0,0,0,0.2);
+    border-radius: 50px;
+    margin: 50px;
+}
+
+.box3{
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(0,0,0,0.2);
+    border-radius: 30px;
+    margin: 50px;
+    display: flex;
+}
